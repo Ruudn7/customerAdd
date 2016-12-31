@@ -110,7 +110,9 @@ form textarea {
 
 .firstBarElement{
     font-size: 15px;
-    color: grey ;
-    
+    color: grey ;  
+}
 
+.header{
+    margin-bottom: 5px;
 }
