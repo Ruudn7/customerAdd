@@ -43,27 +43,41 @@
      
 
         <div class = " col-md-10">
-            <div class = "col-md-10">
+            <div class = "col-md-12">
                 <h2 class = "header"> FormPage</h2>
                 <p> page/systems/graph </p>
             </div>
-            <form action="#" id="myForm" class = "marT">
-                <div class = "col-md-2 col-md-offset-2 tab center">
-                <input type="text" name="your-name" placeholder="Imię i nazwisko" data-error="Podaj imię i nazwisko">
+            <div class = " col-md-12 centerBox">
+                <div class = "col-md-offset-1 header">
+                    <h2> User Info </h2>
                 </div>
-                <div class = "col-md-2  tab center">
-                    <input type="email" name="your-email" placeholder="Adres e-mail" data-error="Podaj poprawny adres e-mail">
+                <form action="#" id="myForm" class = "marT">
+                    <div class = "col-md-5">
+                        <p class = "boxText"> Podaj imię i nazwisko </p>
+                    </div>
+                    <div class = "col-md-7 center">
+                        <input type="text" name="your-name" placeholder="Imię i nazwisko" data-error="Podaj imię i nazwisko">
+                    </div>
+                     <div class = "col-md-5">
+                        <p class = "boxText"> Podaj email</p>
+                    </div>
+                    <div class = "col-md-7 center">
+                        <input type="email" name="your-email" placeholder="Adres e-mail" data-error="Podaj poprawny adres e-mail">
+                    </div>
+                     <div class = "col-md-5">
+                        <p class = "boxText"> Podaj typ tekstu </p>
+                    </div>
+                    <div class = "col-md-7 ">
+                        <select name="your-subject" data-error="Wybierz temat wiadomości">    
+                            <option value="" disabled selected>- Temat wiadomości -</option>
+                            <option value="pytanie">Pytanie</option>
+                            <option value="propozycja">Propozycja</option>
+                            <option value="support">Support</option>                    
+                        </select>   
+                    </div>   
+                </form>
                 </div>
-                    <div class = "col-md-2  tab center">
-                    <select name="your-subject" data-error="Wybierz temat wiadomości">                    <option value="" disabled selected>- Temat wiadomości -</option>
-                        <option value="pytanie">Pytanie</option>
-                        <option value="propozycja">Propozycja</option>
-                        <option value="support">Support</option>                    
-                    </select>   
-                </div>   
-            </form>
-        </div>
-    </div>
+
 
 <script src="js/script.js"></script>
 </body>
