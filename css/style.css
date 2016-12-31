@@ -1,0 +1,116 @@
+.center {
+
+    text-align: center;
+}
+ .container{
+     padding: 0;
+ }
+
+.firstH{
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+}
+
+.textvalue{
+    width: 100%;
+    height: 200px;
+    margin: 20px 0 20px 0;
+}
+
+
+form input[type="text"],
+form input[type="email"],
+select,
+textarea {
+    border: 1px #C5C5C5 solid;
+    background: #fff;
+
+    font: 14px/35px Tahoma, Arial, sans-serif;
+    color: #8A8A8A;
+}
+
+form input[type="text"].error,
+form input[type="email"].error,
+select.error,
+textarea.error {
+    border-color: #FFA9C7;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    display: block;
+    width: 200px;
+    height: 35px;
+    padding: 0 15px;
+    margin: 0 20px 20px 0;
+    float: left;
+}
+
+form select {
+    width: 200px;
+    height: 35px;
+    padding: 0 15px;
+    border-radius: 0;
+
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+form textarea {
+    clear: both;
+    display: block;
+    width: 100%;
+    height: 150px;
+    padding: 10px 15px 0 15px;
+    margin-bottom: 20px;
+
+    resize: none;
+
+    line-height: 22px;
+}
+
+
+.butto{
+    padding: 0 30px;
+    height: 40px;
+    float: right;
+    border: none;
+    background: #00C2F1;
+    
+    cursor: pointer;
+
+    font: 14px/35px Tahoma, Arial, sans-serif;
+    color: #00566B;
+}
+
+
+.logosize1{
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+
+}
+
+.top{
+    border-top: solid #808099 0.5px;
+    background-color: #EEE;
+    padding: 0;
+}
+
+.marT{
+    margin-top: 10px; 
+}
+
+.leftSide{
+    background-color: snow;
+    height: 100%;
+    margin-left: 0;
+
+}
+
+.firstBarElement{
+    font-size: 15px;
+    color: grey ;
+    
+
+}
