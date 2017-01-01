@@ -1,7 +1,8 @@
 (function(){
 
     var form = document.querySelector("#myForm"),
-        fields = form.querySelectorAll("[data-error]");
+        fields = form.querySelectorAll("[data-error]"),
+        pass = form.querySelector("#passw");
 
 function isNotEmpty(field) {
 
@@ -19,6 +20,15 @@ function isEmail(field) {
     return field.value.indexOf("@") !== -1;
 
 }
+
+function isTheSame(field) {
+
+    return pass.value !== fields[2].value;
+    
+
+}
+
+
 
 function displayErrors(errors) {
 
@@ -61,16 +71,18 @@ form.addEventListener("submit", function(e){
        var  field = fields[i],
             isValid = false;
 
-
-       if(field.type === "text"){
+       
+        if(field.type === "text"){
             isValid = isNotEmpty(field);
        } else  if(field.type === "email"){
             isValid = isEmail(field);
-        } else  if(field.type === "password"){
+       } else if(field.type === "password"){
             isValid = isAtLeast(field, 5);
-        } else  if(field.type === "textarea") {
-             isValid = isAtLeast(field, 5);
-        }
+        } 
+        
+       
+
+
 
         if (!isValid) {
             field.classList.add("error");
@@ -87,7 +99,9 @@ form.addEventListener("submit", function(e){
     }
 
 
-
+    console.log(fields[2].value);
+    console.log(fields[3].value);
+    console.log(pass.value);
     console.log(errors);
 }, false);
  
