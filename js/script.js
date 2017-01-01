@@ -66,8 +66,8 @@ form.addEventListener("submit", function(e){
             isValid = isNotEmpty(field);
        } else  if(field.type === "email"){
             isValid = isEmail(field);
-        } else  if(field.type === "select-one"){
-            isValid = isNotEmpty(field);
+        } else  if(field.type === "password"){
+            isValid = isAtLeast(field, 5);
         } else  if(field.type === "textarea") {
              isValid = isAtLeast(field, 5);
         }

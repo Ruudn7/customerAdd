@@ -1,6 +1,6 @@
 .center {
-
     text-align: center;
+    margin-right: 10px;
 }
  .container{
      padding: 0;
@@ -110,4 +110,9 @@ form input[type="re_password"] {
     font-size: 15px;
     color: grey;
     padding-top: 15px;
+}
+
+.topHeader{
+    font-size: 25px;
+    padding-top: 30px;
 }
