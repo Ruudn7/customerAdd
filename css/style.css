@@ -94,8 +94,17 @@ form input[type="re_password"] {
 }
 
 .header{
+    margin-top: 30px;
     margin-bottom: 5px;
     text-align: left;
+    color: grey;
+    
+}
+
+.headerP{
+    margin-bottom: 50px;
+    color: gray;
+
 }
 
 .centerBox{
@@ -139,7 +148,7 @@ form input[type="re_password"] {
 
 .rSight1{
     border: 24px solid transparent;
-    border-left: 14px solid black;
+    border-left: 14px solid #e0e0e0;
     border-right: 0;
     display: block;
     position: absolute;
@@ -170,7 +179,7 @@ form input[type="re_password"] {
 
 .l1_1{
     left:139px;
-     border-left: 14px solid black;
+     border-left: 14px solid #e0e0e0;
 }
 
 
@@ -181,7 +190,7 @@ form input[type="re_password"] {
 
 .l2_1{
     left:208px;
-    border-left: 14px solid black;
+    border-left: 14px solid #e0e0e0;
 }
 
 .nclick{
