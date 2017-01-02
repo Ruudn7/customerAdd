@@ -135,6 +135,22 @@ form input[type="re_password"] {
     height: 48px;
 }
 
+
+
+.rSight1{
+    border: 24px solid transparent;
+    border-left: 14px solid black;
+    border-right: 0;
+    display: block;
+    position: absolute;
+    left:70px;
+    top: 0;
+    z-index: 1;
+    
+}
+
+
+
 .rSight{
     border: 24px solid transparent;
     border-left: 14px solid white;
@@ -149,13 +165,25 @@ form input[type="re_password"] {
 
 .l1{
     left:138px;
-     border-left: 14px solid grey;
+     border-left: 14px solid #999999;
 }
+
+.l1_1{
+    left:139px;
+     border-left: 14px solid black;
+}
+
 
 .l2{
     left:207px;
-    border-left: 14px solid grey;
+    border-left: 14px solid #999999;
 }
+
+.l2_1{
+    left:208px;
+    border-left: 14px solid black;
+}
+
 .nclick{
-    background-color: grey;
+    background-color: #999999;
 }
