@@ -196,3 +196,8 @@ form input[type="re_password"] {
 .nclick{
     background-color: #999999;
 }
+
+.SecondStepText{
+    margin-top: 20px;
+
+}
