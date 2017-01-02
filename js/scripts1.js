@@ -1,48 +1,74 @@
-(function() {
+var butto = document.querySelector("#yesNo"),
+    butto1 = document.querySelector("#yesNo1"),
+    butto2 = document.querySelector("#yesNo2");
 
-function createButton() {
-
-var button = document.createElement("button");
-
-button.classList.add("backToTop", "hidden");
-button.textContent = "Powrót do góry";
-document.body.appendChild(button);
+console.log(butto);
 
 
-return button;
 
-}
+function buttonChange(){
 
-var button = createButton ();
-
-function animateScroll(){
-
-    if(document.body.scrollTop > 0) {
-        window.scrollBy(0, -5);
-        setTimeout(animateScroll, 10);
-
+    if(butto.className === "button2") {
+        butto.classList.remove("button2");
+        butto.classList.add("button2_1");
+        butto.textContent = "Nie";
+    } else {
+         butto.classList.add("button2");
+        butto.classList.remove("button2_1");
+        butto.textContent = "Tak";
     }
 
 }
 
-button.addEventListener("click" ,function(e){
+butto.addEventListener("click" ,function(e){
 
-    e.stopPropagation();
 
-    animateScroll();
+
+   buttonChange();
+
+});
+
+function buttonChange1(){
+
+    if(butto1.className === "button2") {
+        butto1.classList.remove("button2");
+        butto1.classList.add("button2_1");
+        butto1.textContent = "Nie";
+    } else {
+         butto1.classList.add("button2");
+        butto1.classList.remove("button2_1");
+        butto1.textContent = "Tak";
+    }
+
+}
+
+butto1.addEventListener("click" ,function(e){
+
+
+
+   buttonChange1();
 
 });
 
 
-window.addEventListener("scroll", function(){
+function buttonChange2(){
 
-if(document.body.scrollTop > 200 ){
-    button.classList.remove("hidden");
-} else {
-    button.classList.add("hidden");   
+    if(butto2.className === "button2") {
+        butto2.classList.remove("button2");
+        butto2.classList.add("button2_1");
+        butto2.textContent = "Nie";
+    } else {
+         butto2.classList.add("button2");
+        butto2.classList.remove("button2_1");
+        butto2.textContent = "Tak";
+    }
+
 }
 
-}, false);
+butto2.addEventListener("click" ,function(e){
 
 
-})();
+
+   buttonChange2();
+
+});

@@ -221,3 +221,22 @@ form input[type="re_password"] {
     margin-top: 20px;
 
 }
+
+.button2{
+    border-radius: 50%;
+    background-color: lawngreen;
+    margin-top: 20px;
+    height: 30px;
+    width: 50px;
+
+}
+
+.button2_1{
+    border-radius: 50%;
+    background-color: red;
+    margin-top: 20px;
+    height: 30px;
+    width: 50px;
+
+}
+
