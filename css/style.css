@@ -182,6 +182,10 @@ form input[type="re_password"] {
      border-left: 14px solid #e0e0e0;
 }
 
+.l1_2{
+    left: 138px;
+    border-left: 14px solid white;
+}
 
 .l2{
     left:207px;
@@ -192,6 +196,22 @@ form input[type="re_password"] {
     left:208px;
     border-left: 14px solid #e0e0e0;
 }
+
+.l2_2{
+    left: 138px;
+    border-left: 14px solid white;
+}
+
+.l3{
+    left:69px;
+     border-left: 14px solid #999999;
+}
+
+.l3_1{
+    left:70px;
+     border-left: 14px solid #e0e0e0;
+}
+
 
 .nclick{
     background-color: #999999;
