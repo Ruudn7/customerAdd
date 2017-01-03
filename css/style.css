@@ -192,13 +192,18 @@ form input[type="re_password"] {
     border-left: 14px solid #999999;
 }
 
+.l2_2{
+    left:207px;
+    border-left: 14px solid white;
+}
+
 .l2_1{
     left:208px;
     border-left: 14px solid #e0e0e0;
 }
 
 .l2_2{
-    left: 138px;
+    left: 207px;
     border-left: 14px solid white;
 }
 
