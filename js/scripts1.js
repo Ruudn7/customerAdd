@@ -6,69 +6,48 @@ console.log(butto);
 
 
 
-function buttonChange(){
+function buttonChange(but){
 
-    if(butto.className === "button2") {
-        butto.classList.remove("button2");
-        butto.classList.add("button2_1");
-        butto.textContent = "Nie";
+    if(but.className === "button2") {
+        but.classList.remove("button2");
+        but.classList.add("button2_1");
+        but.textContent = "Nie";
     } else {
-         butto.classList.add("button2");
-        butto.classList.remove("button2_1");
-        butto.textContent = "Tak";
+         but.classList.add("button2");
+        but.classList.remove("button2_1");
+        but.textContent = "Tak";
     }
 
 }
+
 
 butto.addEventListener("click" ,function(e){
 
 
+     var but = butto ;
 
-   buttonChange();
+   buttonChange(but);
+
+  
 
 });
-
-function buttonChange1(){
-
-    if(butto1.className === "button2") {
-        butto1.classList.remove("button2");
-        butto1.classList.add("button2_1");
-        butto1.textContent = "Nie";
-    } else {
-         butto1.classList.add("button2");
-        butto1.classList.remove("button2_1");
-        butto1.textContent = "Tak";
-    }
-
-}
 
 butto1.addEventListener("click" ,function(e){
 
+     var but = butto1 ;
 
-
-   buttonChange1();
+   buttonChange(but);
 
 });
 
 
-function buttonChange2(){
 
-    if(butto2.className === "button2") {
-        butto2.classList.remove("button2");
-        butto2.classList.add("button2_1");
-        butto2.textContent = "Nie";
-    } else {
-         butto2.classList.add("button2");
-        butto2.classList.remove("button2_1");
-        butto2.textContent = "Tak";
-    }
-
-}
 
 butto2.addEventListener("click" ,function(e){
 
+     var but = butto2 ;
 
-
-   buttonChange2();
+   buttonChange(but);
 
 });
+
