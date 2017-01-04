@@ -245,3 +245,8 @@ form input[type="re_password"] {
 
 }
 
+#step2 {
+    display: none;
+}
+
+
