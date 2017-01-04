@@ -174,11 +174,19 @@ form input[type="re_password"] {
 }
 
 
+.step:nth-of-type(1)::before {
+    border-color: #999999;
+
+}
+
+.step.active {
+    background: white;
+}
 
 
-
-
-
+.step.active::after {
+    border-left: 14px solid #fff;
+}
 
 
 
