@@ -64,69 +64,33 @@
             </button>
        
     </div>
-    <script>
-        
 
-
-    var changeButtonRight = document.querySelector('#changeButtonRight'),
-        changeButtonLeft = document.querySelector('#changeButtonLeft'),
-        step1 = document.querySelector('#step1'),
-        step2 = document.querySelector('#step2');
-
-    changeButtonLeft.style.display = 'none';
-
-    changeButtonRight.onclick = function() {
-
-        step1.style.display = 'none';
-        step2.style.display = 'block';
-        changeButtonRight.style.display = 'none';
-        changeButtonLeft.style.display = 'block';
-
-
-    };
-    changeButtonLeft.onclick = function() {
-
-        step1.style.display = 'block';
-        step2.style.display = 'none';
-        changeButtonLeft.style.display = 'none';
-        changeButtonRight.style.display = 'block';
-
-
-    };
-
-
-
-
-
-    </script>
         <div class = " col-md-10">
           
             <div class = "col-md-12">
                 <h2 class = "header"> FormPage</h2>
                 <p class = " headerP"> page/systems/graph </p>
             </div>
+
+
+
+
+
         <div class = " col-md-12 centerBox">
-
-
-
-
-
 
 
             <div class = "col-md-12 topTool">
 
 
-
-
                 <ul class="topTool">
-                    <li class="step nclick">
+                    <li class="step nclick active">
                         <p> Step1 </p>
                     </li>
                     <li class = "step nclick ">
                         <p> Step2 </p>
                 
                      </li>
-                        <li class = "step nclick active">
+                        <li class = "step nclick">
                         <p> Step3 </p>
                       
                      </li>
@@ -139,20 +103,7 @@
                 </ul>
 
 
-
-
-
-
-
             </div>
-
-
-
-
-
-
-
-
 
 
 

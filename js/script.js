@@ -21,12 +21,12 @@
 
     }
 
-    function isTheSame(field) {
+    // function isTheSame(field) {
 
-        return pass.value !== fields[2].value;
+    //     return pass.value !== fields[2].value;
         
 
-    }
+    // }
 
 
     function samePassword(rePassword, password) {
@@ -75,8 +75,10 @@
         var tmpPassword;
         for( var i = 0; i < fields.length; i++){
 
+
            var  field = fields[i],
                 isValid = false;
+
 
            
             if(field.type === "text"){
@@ -88,9 +90,9 @@
             } 
         
 
+
             if(field.name == 'your-password')
                 tmpPassword = field.value;
-
 
 
             if(field.name == 're_password')
@@ -129,3 +131,31 @@
     }, false);
  
 })();
+
+
+
+    var changeButtonRight = document.querySelector('#changeButtonRight'),
+        changeButtonLeft = document.querySelector('#changeButtonLeft'),
+        step1 = document.querySelector('#step1'),
+        step2 = document.querySelector('#step2');
+
+    changeButtonLeft.style.display = 'none';
+
+    changeButtonRight.onclick = function() {
+
+        step1.style.display = 'none';
+        step2.style.display = 'block';
+        changeButtonRight.style.display = 'none';
+        changeButtonLeft.style.display = 'block';
+
+
+    };
+    changeButtonLeft.onclick = function() {
+
+        step1.style.display = 'block';
+        step2.style.display = 'none';
+        changeButtonLeft.style.display = 'none';
+        changeButtonRight.style.display = 'block';
+
+
+    };
